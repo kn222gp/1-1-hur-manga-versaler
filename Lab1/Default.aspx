@@ -17,7 +17,7 @@
         <asp:Button ID="CountButton" runat="server" Text="Räkna antalet versaler" OnClick="CountButton_Click" />
     </div>
     <div>
-        <asp:Label ID="ResultLabel" runat="server" Text=""></asp:Label>
+        <asp:Label ID="ResultLabel" runat="server"></asp:Label>
     </div>
     </form>
 </body>

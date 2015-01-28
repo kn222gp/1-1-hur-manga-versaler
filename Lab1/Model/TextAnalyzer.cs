@@ -16,7 +16,6 @@ namespace Lab1.Model
                 if (char.IsUpper(text[i])) count++;
             }
 
-
             return count;
         }
     }

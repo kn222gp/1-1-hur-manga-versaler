@@ -16,11 +16,12 @@ namespace Lab1
 
         protected void CountButton_Click(object sender, EventArgs e)
         {
-            var input = InputTextBox.Text;
-            ResultLabel.Text = "Antal versaler: " + Model.TextAnalyzer.GetNumberOfCapitals(input).ToString();
-
-            if(InputTextBox.Enabled == true)
+            
+            if(InputTextBox.Enabled)
             {
+                var input = InputTextBox.Text;
+                ResultLabel.Text = "Antal versaler: " + Model.TextAnalyzer.GetNumberOfCapitals(input).ToString();
+
                 InputTextBox.Enabled = false;
                 CountButton.Text = "Ny uträckning";
             }
@@ -30,6 +31,7 @@ namespace Lab1
                 ResultLabel.Text = "";
                 InputTextBox.Enabled = true;
                 CountButton.Text = "Räkna antalet versaler";
+
             }
         }
     }
